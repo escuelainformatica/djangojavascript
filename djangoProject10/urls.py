@@ -21,5 +21,7 @@ import grafico_app.views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',grafico_app.views.grafico),
-    path('api/',grafico_app.views.api_datos)
+    path('api/',grafico_app.views.api_datos),
+    path('api/solicitartoken',grafico_app.views.api_obtener_token)
 ]
+
